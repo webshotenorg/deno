@@ -1,0 +1,10 @@
+{
+  "name": "@scope/myserverrequest",
+  "tasks": {
+    "dev": "deno run --watch main.ts"
+  },
+  "exports": "./main.ts",
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1"
+  }
+}

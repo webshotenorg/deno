@@ -1,0 +1,9 @@
+{
+ "workspace": [
+    "./work/project/my_project",
+    "./work/project/my_server",
+    "./work/project/my_server_request",
+    "./work/project/my_server_stream",
+    "./work/project/my_server_websocket"
+]
+}

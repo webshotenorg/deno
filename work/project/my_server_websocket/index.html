@@ -1,0 +1,18 @@
+<h1>Deno WebSocket chat</h1>
+
+<div id=recv></div>
+<input id=mes><button id=btn>send</button>
+
+<script type="module">
+const address = "ws://localhost:8000/ws";
+const socket = new WebSocket(address);
+socket.onmessage = (msg) => {
+  const data = msg.data;
+  const div = document.createElement("div");
+  div.textContent = data;
+  recv.appendChild(div);
+};
+btn.onclick = () => {
+  socket.send(mes.value);
+};
+</script>
